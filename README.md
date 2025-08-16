@@ -91,14 +91,14 @@ The server will start on port `8080`.
 Use `curl` or any API client to make a GET request to the endpoint.
 
 ```sh
-curl -X GET http://localhost:8080/api/activity/google
+curl -X GET http://localhost:8080/api/activity/surabattulavenkatesh
 ```
 - **Success Response (`200 OK`)**:
 ```json
 [
     {
         "repositoryName": ".github",
-        "owner": "google",
+        "owner": "surabattulavenkatesh",
         "recentCommits": [
             {
                 "sha": "bf2d2a...19e5de",
