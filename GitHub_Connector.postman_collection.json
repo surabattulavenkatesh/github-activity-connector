@@ -1,0 +1,45 @@
+{
+  "info": {
+    "_postman_id": "a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d",
+    "name": "GitHub Activity Connector",
+    "description": "A collection for testing the GitHub Repository Activity Connector API.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get User/Org Activity",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/activity/:username",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "activity",
+            ":username"
+          ],
+          "variable": [
+            {
+              "key": "username",
+              "value": "surabattulavenkatesh",
+              "description": "The GitHub username or organization to query (e.g., google, microsoft, apache)."
+            }
+          ]
+        },
+        "description": "Fetches all public repositories and their 20 most recent commits for a given GitHub user or organization."
+      },
+      "response": []
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:8080",
+      "type": "string",
+      "description": "The base URL of the running Spring Boot application."
+    }
+  ]
+}

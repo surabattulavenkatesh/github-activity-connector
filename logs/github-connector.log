@@ -1,0 +1,364 @@
+2025-08-16 13:12:15,196 ERROR org.springframework.boot.SpringApplication [main] Application run failed
+java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.classic.pattern.ClassOfCallerConverter@45c8d09f - failed to parse integer string [1.] java.lang.NumberFormatException: For input string: "1."
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:347)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:298)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:246)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:223)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:138)
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:81)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:64)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:63)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:370)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:330)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.example.githubconnector.GithubConnectorApplication.main(GithubConnectorApplication.java:10)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.classic.pattern.ClassOfCallerConverter@45c8d09f - failed to parse integer string [1.] java.lang.NumberFormatException: For input string: "1."
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.reportConfigurationErrorsIfNecessary(LogbackLoggingSystem.java:284)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:262)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:81)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:61)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:193)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:332)
+	... 19 common frames omitted
+	Suppressed: java.lang.NumberFormatException: For input string: "1."
+		at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+		at java.base/java.lang.Integer.parseInt(Integer.java:662)
+		at java.base/java.lang.Integer.parseInt(Integer.java:778)
+		at ch.qos.logback.classic.pattern.NamedConverter.start(NamedConverter.java:92)
+		at ch.qos.logback.core.pattern.ConverterUtil.startConverters(ConverterUtil.java:37)
+		at ch.qos.logback.core.pattern.PatternLayoutBase.start(PatternLayoutBase.java:90)
+		at ch.qos.logback.classic.encoder.PatternLayoutEncoder.start(PatternLayoutEncoder.java:28)
+		at ch.qos.logback.core.model.processor.ImplicitModelHandler.postHandleComplex(ImplicitModelHandler.java:207)
+		at ch.qos.logback.core.model.processor.ImplicitModelHandler.postHandle(ImplicitModelHandler.java:186)
+		at ch.qos.logback.core.model.processor.DefaultProcessor.secondPhaseTraverse(DefaultProcessor.java:257)
+		at ch.qos.logback.core.model.processor.DefaultProcessor.secondPhaseTraverse(DefaultProcessor.java:253)
+		at ch.qos.logback.core.model.processor.DefaultProcessor.secondPhaseTraverse(DefaultProcessor.java:253)
+		at ch.qos.logback.core.model.processor.DefaultProcessor.traversalLoop(DefaultProcessor.java:90)
+		at ch.qos.logback.core.model.processor.DefaultProcessor.process(DefaultProcessor.java:106)
+		at ch.qos.logback.core.joran.GenericXMLConfigurator.processModel(GenericXMLConfigurator.java:222)
+		at org.springframework.boot.logging.logback.SpringBootJoranConfigurator.processModel(SpringBootJoranConfigurator.java:133)
+		at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:178)
+		at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:123)
+		at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:66)
+		at org.springframework.boot.logging.logback.LogbackLoggingSystem.configureByResourceUrl(LogbackLoggingSystem.java:294)
+		at org.springframework.boot.logging.logback.LogbackLoggingSystem.lambda$loadConfiguration$1(LogbackLoggingSystem.java:255)
+		at org.springframework.boot.logging.logback.LogbackLoggingSystem.withLoggingSuppressed(LogbackLoggingSystem.java:474)
+		at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:249)
+		... 23 common frames omitted
+2025-08-16 13:12:24,509 ERROR org.springframework.boot.SpringApplication [main] Application run failed
+java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.classic.pattern.ClassOfCallerConverter@129b4fe2 - failed to parse integer string [1.] java.lang.NumberFormatException: For input string: "1."
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:347)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:298)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:246)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:223)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:138)
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:81)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:64)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:63)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:370)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:330)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.example.githubconnector.GithubConnectorApplication.main(GithubConnectorApplication.java:10)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.classic.pattern.ClassOfCallerConverter@129b4fe2 - failed to parse integer string [1.] java.lang.NumberFormatException: For input string: "1."
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.reportConfigurationErrorsIfNecessary(LogbackLoggingSystem.java:284)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:262)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:81)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:61)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:193)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:332)
+	... 19 common frames omitted
+	Suppressed: java.lang.NumberFormatException: For input string: "1."
+		at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+		at java.base/java.lang.Integer.parseInt(Integer.java:662)
+		at java.base/java.lang.Integer.parseInt(Integer.java:778)
+		at ch.qos.logback.classic.pattern.NamedConverter.start(NamedConverter.java:92)
+		at ch.qos.logback.core.pattern.ConverterUtil.startConverters(ConverterUtil.java:37)
+		at ch.qos.logback.core.pattern.PatternLayoutBase.start(PatternLayoutBase.java:90)
+		at ch.qos.logback.classic.encoder.PatternLayoutEncoder.start(PatternLayoutEncoder.java:28)
+		at ch.qos.logback.core.model.processor.ImplicitModelHandler.postHandleComplex(ImplicitModelHandler.java:207)
+		at ch.qos.logback.core.model.processor.ImplicitModelHandler.postHandle(ImplicitModelHandler.java:186)
+		at ch.qos.logback.core.model.processor.DefaultProcessor.secondPhaseTraverse(DefaultProcessor.java:257)
+		at ch.qos.logback.core.model.processor.DefaultProcessor.secondPhaseTraverse(DefaultProcessor.java:253)
+		at ch.qos.logback.core.model.processor.DefaultProcessor.secondPhaseTraverse(DefaultProcessor.java:253)
+		at ch.qos.logback.core.model.processor.DefaultProcessor.traversalLoop(DefaultProcessor.java:90)
+		at ch.qos.logback.core.model.processor.DefaultProcessor.process(DefaultProcessor.java:106)
+		at ch.qos.logback.core.joran.GenericXMLConfigurator.processModel(GenericXMLConfigurator.java:222)
+		at org.springframework.boot.logging.logback.SpringBootJoranConfigurator.processModel(SpringBootJoranConfigurator.java:133)
+		at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:178)
+		at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:123)
+		at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:66)
+		at org.springframework.boot.logging.logback.LogbackLoggingSystem.configureByResourceUrl(LogbackLoggingSystem.java:294)
+		at org.springframework.boot.logging.logback.LogbackLoggingSystem.lambda$loadConfiguration$1(LogbackLoggingSystem.java:255)
+		at org.springframework.boot.logging.logback.LogbackLoggingSystem.withLoggingSuppressed(LogbackLoggingSystem.java:474)
+		at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:249)
+		... 23 common frames omitted
+2025-08-16 13:13:30,270 INFO o.s.b.StartupInfoLogger [main] Starting GithubConnectorApplication using Java 21.0.6 with PID 62613 (/Users/venkateshs@backbase.com/Downloads/github-activity-connector/target/classes started by venkateshs@backbase.com in /Users/venkateshs@backbase.com/Downloads/github-activity-connector)
+2025-08-16 13:13:30,271 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2025-08-16 13:13:30,527 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8080 (http)
+2025-08-16 13:13:30,531 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2025-08-16 13:13:30,532 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2025-08-16 13:13:30,532 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.28]
+2025-08-16 13:13:30,546 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2025-08-16 13:13:30,546 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 263 ms
+2025-08-16 13:13:30,582 WARN o.s.c.s.AbstractApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'activityController' defined in file [/Users/venkateshs@backbase.com/Downloads/github-activity-connector/target/classes/com/example/githubconnector/controller/ActivityController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'gitHubService' defined in file [/Users/venkateshs@backbase.com/Downloads/github-activity-connector/target/classes/com/example/githubconnector/service/GitHubService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'restTemplate' defined in class path resource [com/example/githubconnector/config/AppConfig.class]: Failed to instantiate [org.springframework.web.client.RestTemplate]: Factory method 'restTemplate' threw exception with message: GitHub API token is not configured. Please set GITHUB_TOKEN environment variable.
+2025-08-16 13:13:30,583 INFO o.a.j.l.DirectJDKLog [main] Stopping service [Tomcat]
+2025-08-16 13:13:30,588 INFO o.s.b.a.l.ConditionEvaluationReportLogger [main] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-08-16 13:13:30,592 ERROR o.s.b.SpringApplication [main] Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'activityController' defined in file [/Users/venkateshs@backbase.com/Downloads/github-activity-connector/target/classes/com/example/githubconnector/controller/ActivityController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'gitHubService' defined in file [/Users/venkateshs@backbase.com/Downloads/github-activity-connector/target/classes/com/example/githubconnector/service/GitHubService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'restTemplate' defined in class path resource [com/example/githubconnector/config/AppConfig.class]: Failed to instantiate [org.springframework.web.client.RestTemplate]: Factory method 'restTemplate' threw exception with message: GitHub API token is not configured. Please set GITHUB_TOKEN environment variable.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:795)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:237)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1375)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1212)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:971)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.example.githubconnector.GithubConnectorApplication.main(GithubConnectorApplication.java:10)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'gitHubService' defined in file [/Users/venkateshs@backbase.com/Downloads/github-activity-connector/target/classes/com/example/githubconnector/service/GitHubService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'restTemplate' defined in class path resource [com/example/githubconnector/config/AppConfig.class]: Failed to instantiate [org.springframework.web.client.RestTemplate]: Factory method 'restTemplate' threw exception with message: GitHub API token is not configured. Please set GITHUB_TOKEN environment variable.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:795)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:237)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1375)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1212)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'restTemplate' defined in class path resource [com/example/githubconnector/config/AppConfig.class]: Failed to instantiate [org.springframework.web.client.RestTemplate]: Factory method 'restTemplate' threw exception with message: GitHub API token is not configured. Please set GITHUB_TOKEN environment variable.
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:648)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:636)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1355)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1185)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782)
+	... 33 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.client.RestTemplate]: Factory method 'restTemplate' threw exception with message: GitHub API token is not configured. Please set GITHUB_TOKEN environment variable.
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:178)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:644)
+	... 47 common frames omitted
+Caused by: java.lang.IllegalStateException: GitHub API token is not configured. Please set GITHUB_TOKEN environment variable.
+	at com.example.githubconnector.config.AppConfig.restTemplate(AppConfig.java:20)
+	at com.example.githubconnector.config.AppConfig$$SpringCGLIB$$0.CGLIB$restTemplate$0(<generated>)
+	at com.example.githubconnector.config.AppConfig$$SpringCGLIB$$FastClass$$1.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:348)
+	at com.example.githubconnector.config.AppConfig$$SpringCGLIB$$0.restTemplate(<generated>)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:146)
+	... 48 common frames omitted
+2025-08-16 13:16:48,505 INFO o.s.b.StartupInfoLogger [main] Starting GithubConnectorApplication using Java 21.0.6 with PID 62876 (/Users/venkateshs@backbase.com/Downloads/github-activity-connector/target/classes started by venkateshs@backbase.com in /Users/venkateshs@backbase.com/Downloads/github-activity-connector)
+2025-08-16 13:16:48,506 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2025-08-16 13:16:48,753 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8080 (http)
+2025-08-16 13:16:48,757 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2025-08-16 13:16:48,758 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2025-08-16 13:16:48,758 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.28]
+2025-08-16 13:16:48,772 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2025-08-16 13:16:48,772 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 254 ms
+2025-08-16 13:16:48,877 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2025-08-16 13:16:48,882 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8080 (http) with context path '/'
+2025-08-16 13:16:48,884 INFO o.s.b.StartupInfoLogger [main] Started GithubConnectorApplication in 0.529 seconds (process running for 0.764)
+2025-08-16 13:16:48,885 INFO c.e.g.r.CliRunner [main] No command-line arguments provided. The application will run as a web server.
+2025-08-16 13:16:48,885 INFO c.e.g.r.CliRunner [main] To use the CLI, provide a GitHub username/org as an argument. Example: java -jar app.jar <username>
+2025-08-16 13:19:10,361 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-16 13:19:10,362 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2025-08-16 13:19:10,363 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-2] Completed initialization in 1 ms
+2025-08-16 13:19:18,266 INFO c.e.g.s.GitHubService [http-nio-8080-exec-3] Starting repository activity fetch for user/org: google
+2025-08-16 13:19:19,011 ERROR c.e.g.s.GitHubService [http-nio-8080-exec-3] Failed to fetch repositories for 'google'. Status: 401 UNAUTHORIZED. Message: {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
+2025-08-16 13:19:33,546 INFO c.e.g.s.GitHubService [http-nio-8080-exec-4] Starting repository activity fetch for user/org: :google
+2025-08-16 13:19:34,006 ERROR c.e.g.s.GitHubService [http-nio-8080-exec-4] Failed to fetch repositories for ':google'. Status: 401 UNAUTHORIZED. Message: {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
+2025-08-16 13:20:37,975 INFO c.e.g.s.GitHubService [http-nio-8080-exec-7] Starting repository activity fetch for user/org: google
+2025-08-16 13:20:38,592 ERROR c.e.g.s.GitHubService [http-nio-8080-exec-7] Failed to fetch repositories for 'google'. Status: 401 UNAUTHORIZED. Message: {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
+2025-08-16 13:21:12,245 INFO c.e.g.s.GitHubService [http-nio-8080-exec-8] Starting repository activity fetch for user/org: google
+2025-08-16 13:21:12,710 ERROR c.e.g.s.GitHubService [http-nio-8080-exec-8] Failed to fetch repositories for 'google'. Status: 401 UNAUTHORIZED. Message: {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
+2025-08-16 16:11:53,862 INFO o.s.b.StartupInfoLogger [main] Starting GithubConnectorApplication using Java 21.0.6 with PID 66512 (/Users/venkateshs@backbase.com/Downloads/github-activity-connector/target/classes started by venkateshs@backbase.com in /Users/venkateshs@backbase.com/Downloads/github-activity-connector)
+2025-08-16 16:11:53,863 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2025-08-16 16:11:54,109 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8080 (http)
+2025-08-16 16:11:54,113 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2025-08-16 16:11:54,114 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2025-08-16 16:11:54,115 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.28]
+2025-08-16 16:11:54,128 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2025-08-16 16:11:54,128 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 252 ms
+2025-08-16 16:11:54,239 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2025-08-16 16:11:54,244 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8080 (http) with context path '/'
+2025-08-16 16:11:54,246 INFO o.s.b.StartupInfoLogger [main] Started GithubConnectorApplication in 0.533 seconds (process running for 0.728)
+2025-08-16 16:11:54,247 INFO c.e.g.r.CliRunner [main] No command-line arguments provided. The application will run as a web server.
+2025-08-16 16:11:54,247 INFO c.e.g.r.CliRunner [main] To use the CLI, provide a GitHub username/org as an argument. Example: java -jar app.jar <username>
+2025-08-16 16:12:12,218 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-16 16:12:12,218 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2025-08-16 16:12:12,219 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-2] Completed initialization in 1 ms
+2025-08-16 16:12:12,232 INFO c.e.g.s.GitHubService [http-nio-8080-exec-2] Starting repository activity fetch for user/org: surabattulavenkatesh
+2025-08-16 16:12:13,455 INFO c.e.g.s.GitHubService [http-nio-8080-exec-2] Found 22 total repositories for 'surabattulavenkatesh' using path '/users/{name}/repos'
+2025-08-16 16:12:19,857 WARN c.e.g.s.GitHubService [http-nio-8080-exec-2] Repository 'surabattulavenkatesh/Java-Codes' is empty or has no commits. Skipping.
+2025-08-16 16:12:25,871 WARN c.e.g.s.GitHubService [http-nio-8080-exec-2] Repository 'surabattulavenkatesh/surabattulavenkatesh' is empty or has no commits. Skipping.
+2025-08-16 16:14:55,098 INFO c.e.g.s.GitHubService [http-nio-8080-exec-4] Starting repository activity fetch for user/org: :surabattulavenkatesh
+2025-08-16 16:14:55,628 ERROR c.e.g.s.GitHubService [http-nio-8080-exec-4] Failed to fetch repositories for ':surabattulavenkatesh'. Status: 404 NOT_FOUND. Message: {"message":"Not Found","documentation_url":"https://docs.github.com/rest/repos/repos#list-repositories-for-a-user","status":"404"}
+2025-08-16 16:15:01,808 INFO c.e.g.s.GitHubService [http-nio-8080-exec-6] Starting repository activity fetch for user/org: surabattulavenkatesh
+2025-08-16 16:15:02,819 INFO c.e.g.s.GitHubService [http-nio-8080-exec-6] Found 22 total repositories for 'surabattulavenkatesh' using path '/users/{name}/repos'
+2025-08-16 16:15:08,489 WARN c.e.g.s.GitHubService [http-nio-8080-exec-6] Repository 'surabattulavenkatesh/Java-Codes' is empty or has no commits. Skipping.
+2025-08-16 16:15:14,590 WARN c.e.g.s.GitHubService [http-nio-8080-exec-6] Repository 'surabattulavenkatesh/surabattulavenkatesh' is empty or has no commits. Skipping.
+2025-08-16 16:15:49,785 INFO o.s.b.StartupInfoLogger [main] Starting GithubConnectorApplication using Java 21.0.6 with PID 66671 (/Users/venkateshs@backbase.com/Downloads/github-activity-connector/target/classes started by venkateshs@backbase.com in /Users/venkateshs@backbase.com/Downloads/github-activity-connector)
+2025-08-16 16:15:49,786 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2025-08-16 16:15:50,047 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8080 (http)
+2025-08-16 16:15:50,051 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2025-08-16 16:15:50,052 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2025-08-16 16:15:50,053 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.28]
+2025-08-16 16:15:50,066 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2025-08-16 16:15:50,066 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 268 ms
+2025-08-16 16:15:50,170 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2025-08-16 16:15:50,174 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8080 (http) with context path '/'
+2025-08-16 16:15:50,177 INFO o.s.b.StartupInfoLogger [main] Started GithubConnectorApplication in 0.535 seconds (process running for 0.753)
+2025-08-16 16:15:50,178 INFO c.e.g.r.CliRunner [main] No command-line arguments provided. The application will run as a web server.
+2025-08-16 16:15:50,178 INFO c.e.g.r.CliRunner [main] To use the CLI, provide a GitHub username/org as an argument. Example: java -jar app.jar <username>
+2025-08-16 16:16:08,733 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-16 16:16:08,733 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2025-08-16 16:16:08,733 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 0 ms
+2025-08-16 16:16:08,747 INFO c.e.g.s.GitHubService [http-nio-8080-exec-1] Starting repository activity fetch for user/org: surabattulavenkatesh
+2025-08-16 16:16:09,835 INFO c.e.g.s.GitHubService [http-nio-8080-exec-1] Found 22 total repositories for 'surabattulavenkatesh' using path '/users/{name}/repos'
+2025-08-16 16:16:14,566 WARN c.e.g.s.GitHubService [http-nio-8080-exec-1] Repository 'surabattulavenkatesh/Java-Codes' is empty or has no commits. Skipping.
+2025-08-16 16:16:20,461 WARN c.e.g.s.GitHubService [http-nio-8080-exec-1] Repository 'surabattulavenkatesh/surabattulavenkatesh' is empty or has no commits. Skipping.
+2025-08-16 16:28:50,576 INFO o.s.b.StartupInfoLogger [main] Starting GithubConnectorApplication using Java 21.0.6 with PID 67467 (/Users/venkateshs@backbase.com/Downloads/github-activity-connector/target/classes started by venkateshs@backbase.com in /Users/venkateshs@backbase.com/Downloads/github-activity-connector)
+2025-08-16 16:28:50,576 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2025-08-16 16:28:50,817 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8080 (http)
+2025-08-16 16:28:50,821 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2025-08-16 16:28:50,822 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2025-08-16 16:28:50,822 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.28]
+2025-08-16 16:28:50,836 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2025-08-16 16:28:50,836 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 248 ms
+2025-08-16 16:28:50,941 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2025-08-16 16:28:50,946 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8080 (http) with context path '/'
+2025-08-16 16:28:50,949 INFO o.s.b.StartupInfoLogger [main] Started GithubConnectorApplication in 0.515 seconds (process running for 0.73)
+2025-08-16 16:28:50,949 INFO c.e.g.r.CliRunner [main] No command-line arguments provided. Running as web server.
+2025-08-16 16:28:50,949 INFO c.e.g.r.CliRunner [main] To use CLI: java -jar app.jar <github-username-or-org>
+2025-08-16 16:28:55,425 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-16 16:28:55,426 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2025-08-16 16:28:55,426 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-2] Completed initialization in 0 ms
+2025-08-16 16:28:55,440 INFO c.e.g.s.GitHubService [http-nio-8080-exec-2] Starting repository activity fetch for user/org: google
+2025-08-16 16:29:23,332 ERROR c.e.g.e.RestExceptionHandler [http-nio-8080-exec-2] An unexpected error occurred
+org.springframework.web.client.HttpServerErrorException$BadGateway: 502 Bad Gateway: "{<EOL>  "message": "Server Error"<EOL>}<EOL>"
+	at org.springframework.web.client.HttpServerErrorException.create(HttpServerErrorException.java:108)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:186)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:137)
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63)
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:942)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:891)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:790)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:701)
+	at com.example.githubconnector.service.GitHubService.fetchAllRepositories(GitHubService.java:73)
+	at com.example.githubconnector.service.GitHubService.fetchAllRepositoriesForUserOrOrg(GitHubService.java:53)
+	at com.example.githubconnector.service.GitHubService.getRepositoryActivity(GitHubService.java:43)
+	at com.example.githubconnector.controller.ActivityController.getRepositoryActivity(ActivityController.java:23)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-08-16 16:29:48,274 INFO c.e.g.s.GitHubService [http-nio-8080-exec-4] Starting repository activity fetch for user/org: surabattulavenkatesh
+2025-08-16 16:29:49,097 INFO c.e.g.s.GitHubService [http-nio-8080-exec-4] Found 22 total repositories for 'surabattulavenkatesh' using path '/users/{name}/repos'
+2025-08-16 16:29:53,097 WARN c.e.g.s.GitHubService [http-nio-8080-exec-4] Repository 'surabattulavenkatesh/Java-Codes' is empty or has no commits. Skipping.
+2025-08-16 16:29:59,624 WARN c.e.g.s.GitHubService [http-nio-8080-exec-4] Repository 'surabattulavenkatesh/surabattulavenkatesh' is empty or has no commits. Skipping.
+2025-08-16 16:30:18,082 INFO o.s.b.StartupInfoLogger [main] Starting GithubConnectorApplication using Java 21.0.6 with PID 67535 (/Users/venkateshs@backbase.com/Downloads/github-activity-connector/target/classes started by venkateshs@backbase.com in /Users/venkateshs@backbase.com/Downloads/github-activity-connector)
+2025-08-16 16:30:18,082 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2025-08-16 16:30:18,336 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8080 (http)
+2025-08-16 16:30:18,340 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2025-08-16 16:30:18,341 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2025-08-16 16:30:18,341 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.28]
+2025-08-16 16:30:18,355 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2025-08-16 16:30:18,355 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 260 ms
+2025-08-16 16:30:18,463 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2025-08-16 16:30:18,468 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8080 (http) with context path '/'
+2025-08-16 16:30:18,471 INFO o.s.b.StartupInfoLogger [main] Started GithubConnectorApplication in 0.536 seconds (process running for 0.746)
+2025-08-16 16:30:18,472 INFO c.e.g.r.CliRunner [main] No command-line arguments provided. Running as web server.
+2025-08-16 16:30:18,472 INFO c.e.g.r.CliRunner [main] To use CLI: java -jar app.jar <github-username-or-org>
